@@ -1,0 +1,23 @@
+{
+  "name": "mercado-liebre",
+  "version": "1.0.0",
+  "description": "Trbajo para aprender a hacer una web",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PeterSauma/Mercado-Liebre.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PeterSauma/Mercado-Liebre/issues"
+  },
+  "homepage": "https://github.com/PeterSauma/Mercado-Liebre#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
