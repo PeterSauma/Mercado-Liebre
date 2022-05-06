@@ -1,40 +1,31 @@
-//Declaracion de frameworks
 const express = require('express');
 const app = express();
 const path = require('path')
 
-//Declaracion de puertos
 const port = 3000
 
+//views
+const views = path.join(__dirname, 'views/')
+//public
+const public = path.join(__dirname, 'public/')
+//Declaracion de routes
+const htpptHome = '/home'
+const hhtpRaiz = '/'
+//html's
+const homeHtml = 'home.html'
 
-//Declaracion de url
+// Define the static file path
+app.use(express.static(__dirname +'public/'))
 
-const urlHome = '/home'
-const urlPerfil = '/perfil'
-const urlProductosAgregar = '/producto/agregar'
+app.get(hhtpRaiz, (req, res) => {
+    res.sendFile(path.join(views, homeHtml))
+})
 
-//Declaracion respons
-const resServer = 'Esto fue esxitoso'
-const resHome ='Hola, estamos en el home'
-let saludo = "Bienvenido/a, ahora estamos en tu perfil"
+app.get(htpptHome, (req, res) => {
+    res.sendFile(path.join(views, homeHtml))
+})
 
-//Declaracion de variables
-let producto ={
-    tipoProducto: null,
-    precio : null,
-    cantidad: null
-}
-
-//Codigo
-
-//>montar el servidor
-app.listen(port,()=> console.log(resServer))
-
-//>montar rutas 
-
-//>Home
-app.get(urlHome,function(req,res){res.send(resHome)})
-//>Perfil
-app.get(urlPerfil,function(req,res){res.send(saludo)})
-//>agregar produco
-app.get(urlProductosAgregar,function(req,res){res.send(producto)})
+app.listen(port, () => {
+    console.log(`Example app listening at http://localhost:${port}`)
+    console.log(__dirname)
+})

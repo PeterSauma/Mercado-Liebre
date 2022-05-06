@@ -1,9 +1,18 @@
 # Mercado-Liebre
 Trbajo para aprender a hacer una web
 
-# Estructura hmtl
+## git ignore 
+--Ignore Mac system files
+.DS_store
 
-Crear un sitio web
+--Ignore node_modules folder
+node_modules
+
+--Ignore all text files
+*.txt
+
+--Ignore files related to API keys
+.env
 
 ## Comenzando 🚀
 
@@ -46,9 +55,4 @@ _Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para 
 
 Peter Sauma
 
-## Expresiones de Gratitud 🎁
 
-* Comenta a otros sobre este proyecto 📢
-* Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
-* Da las gracias públicamente 🤓.
-* etc.
