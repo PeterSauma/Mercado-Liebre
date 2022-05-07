@@ -1,21 +1,21 @@
-const express = require('express');
-const app = express();
+const express = require('express')
+const app = express()
 const path = require('path')
 
 const port = 3000
 
-//views
+// views
 const views = path.join(__dirname, 'views/')
-//public
+// public
 const public = path.join(__dirname, 'public/')
-//Declaracion de routes
-const htpptHome = '/home'
+// hhtp routes
 const hhtpRaiz = '/'
-//html's
+const htpptHome = '/home'
+// html
 const homeHtml = 'home.html'
 
 // Define the static file path
-app.use(express.static(__dirname +'public/'))
+app.use(express.static(__dirname +'/public/'));
 
 app.get(hhtpRaiz, (req, res) => {
     res.sendFile(path.join(views, homeHtml))
