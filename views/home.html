@@ -10,18 +10,20 @@ donde se declara la versión de html que se está usando-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <title>ML</title> <!-- titulo que se muestra en la ventana del navegador -->
         <!-- enlace al archivo css de nuestro proyecto -->
-        <link rel="stylesheet" href="css/css.css"> 
+        <link rel="stylesheet" href="css/style.css"> 
         <!-- enlace al archivo css externo -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet" /> <!-- incluimos css -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet" /> 
     </head>
-
+        
     <body>
         <!-- poner nuestro h1 -->
 
-        <header>
+        <header> <!--encabezado-->
 
-          <div><img src="images/logo-mercado-liebre.svg" alt="ml logo"></div>
-          <h4>Lugar para poner la barra de búsqueda</h4>
+          <div class="container-logo-search-bar">
+            <div class="flex-grow-50"><img src="images/logo-mercado-liebre.svg" alt="ml logo"></div>
+            <div class="flex-grow-50">Lugar para poner la barra de búsqueda</div>
+          </div>
           <h4><i class='fa-solid fa-hand-holding-dollar'></i> Comprá en cuotas y sin tarjeta de crédito</h4>
           <nav>
               <ul>
@@ -40,10 +42,9 @@ donde se declara la versión de html que se está usando-->
               <i class="background-blue color-white border-radius-15 padding-10 fa-solid fa-bars"></i>
           </div>
         
-        </header>
- 
-
-        <main>
+        </header> <!--fin encabezado-->
+   
+        <main> <!--cuerpo-->
 
             <section class="section-1">
 
@@ -152,10 +153,10 @@ donde se declara la versión de html que se está usando-->
 
             </section>
             
-        </main>
+        </main> <!--fin cuerpo-->
 
 
-        <footer>
+        <footer> <!--pie de pagina-->
             <ul class="footer">
                 <li>
                     <h4>Pagá con tarjeta o en efectivo</h4>
@@ -182,6 +183,7 @@ donde se declara la versión de html que se está usando-->
                     <h5> Copyright © 1999-2020 MercadoLiebre S.R.L.</h5>                    
                 </li>
             </ul>
-        </footer>
+        </footer><!--fin pie de pagina-->
+
     </body>
 </html>   
