@@ -10,39 +10,16 @@ Verde: #39b54a;
 */
 /*tipografia Roboto de google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto:wght@100&display=swap');
-
-
+/*<<<<<<< HEAD
 /*media quiere de mobile first para que oculte site y el login navbar*/
 nav{
     display: none;
 }
 
-.flex-grow-1 {
-    flex-grow: 1%;
-}
-
-.flex-grow-2 {
-    display: none;
-}
-
-.flex-grow-3 {
-    display: none;
-}
-
-.flex-grow-4 {
-    display: none;
-}
-
-
-/*>>>>>>CONFIGURACION DEL BODY<<<<<<*/
-body {
-    font-family: 'Raleway', sans-serif;
-    height: 100%;
-}
 
 /*alturas de textos*/
 h2{
-    font-size: 24px;
+    font-size: 24;
 }
 
 h5{
@@ -57,10 +34,6 @@ p{
     font-size: 12px;
 }
 
-i {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
 
 /*>>>>>>CONFIGURACION DEL HEADER<<<<<<*/
 
@@ -68,7 +41,6 @@ i {
 header{
     background-color: #EAC926;
 }
-
 /*atributos*/
 .background-blue{
     background-color: #03264C;
@@ -97,17 +69,9 @@ header{
 /*>>>>>>CONFIGURACION DEL MAIN<<<<<<*/
 /*tamaño y margen del main*/
 main{
-    width: 90%;
+    height: 90%;
     margin: auto;
 }
-
-/*configuracion del section*/
-section{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
 /*configuracion de cada article*/
 article{
     margin-bottom: 10px;
