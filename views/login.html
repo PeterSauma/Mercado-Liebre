@@ -1,0 +1,148 @@
+<!-- El <! DOCTYPE> debe ser lo primero que debe ir en un documento HTML 5, 
+no es una etiqueta, esto es una instrucción para el navegador, 
+donde se declara la versión de html que se está usando-->
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <!-- UTF-8 incluye caracteres raros q no existen en ingles-->
+        <meta charset="UTF-8">
+        <!-- "viewport" con "scale=1.0" asegurará una escala de 1:1-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Ingresá</title><!-- titulo que se muestra en la ventana del navegador -->
+        <link rel="stylesheet" href="css/style.css"><!-- enlace al archivo css de nuestro proyecto -->
+        <link rel="stylesheet" href="css/forms.css"><!-- enlace al archivo css de nuestro proyecto -->
+        <!-- enlace al archivo css externo -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet" /> 
+    </head>
+       
+    <body> 
+        <!-- poner nuestro h1 -->
+
+        <header> <!--encabezado--> 
+        
+          <div class="container-logo-search-bar">
+            <div class="flex-grow-50"><img src="images/logo-mercado-liebre.svg" alt="ml logo"></div>
+            <div class="container-search-bar">
+                <form class="nav-search" action="https://www.mercadolibre.com.ar/jm/search" method="GET" role="search" style="overflow: inherit; display: inherit;">
+                <input type="search" placeholder="Busca lo que quieras aquí">
+                <button type="submit" class="nav-search-btn" tabinex="3">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                </form>
+            </div>
+          </div>
+          <h4 class="hand-holding"><i class='fa-solid fa-hand-holding-dollar'></i> Comprá en cuotas y sin tarjeta de crédito</h4>
+          <nav> 
+              <ul>
+                  <li><a href='home'>Ofertas</a></li>
+                  <li><a href='officialStores.html'>Tiendas Oficiales</a></li>
+                  <li><a href='sell.html'>Vender</a></li>
+                  <li><a href='help.html'>Ayuda</a></li>
+              </ul>
+              <ul>
+                  <li><a href='register'>Creá tu cuenta </a><i class="fa-regular fa-id-card"></i></li>
+                  <li><a href='login'>Ingresá </a><i class="fa-solid fa-right-to-bracket"></i></li>
+                  <li><a href='sell.html'>Mis compras </a><i class="fa-solid fa-basket-shopping"></i></li>
+              </ul>
+          </nav>
+          <div class="burger-menu">
+              <i class="background-blue color-white border-radius-15 padding-10 fa-solid fa-bars"></i>
+          </div>
+        
+        </header> <!--fin encabezado-->
+       
+
+       <main> <!-- cuerpo-->
+
+        <form action="homelogin" method="POST" id="login" name="login">
+            <label for="user_id">
+                Ingresa tu e-mail        
+                <input 
+                    type="email" 
+                    name="user_id" 
+                    value="" 
+                    autocomplete="on" 
+                    autocapitalize="none" 
+                    spellcheck="false" 
+                    autocorrect="off" 
+                    suggestions="[object Object],[object Object],[object Object],[object Object]" 
+                    autofocus="" 
+                    rows="1" 
+                    class="andes-form-control__field" 
+                    maxlength="120" 
+                    id="user_id" 
+                    aria-invalid="false" 
+                    aria-describedby="user_id-message false"
+                    placeholder="e-mail" 
+                >
+            </label>
+
+            <label for="password">
+                Contraseña
+                <input 
+                    type="password" 
+                    class="" 
+                    id="pass" 
+                    name="pass" 
+                    placeholder="Contraseña" 
+                    data-testid="royal_pass"
+                >
+            </label>
+            
+            <button 
+                value="1" 
+                class="" 
+                id="loginbutton" 
+                data-testid="royal_login_button" 
+                type="submit"
+            >
+            Iniciar sesión
+            </button>
+
+        </form>
+
+
+            <section> <!--botón de WhatsApp-->
+               <div class="whatsapp-btn">
+                    <a href="https://api.whatsapp.com/send/?phone=CalleFalsa123&text=Si estás leyendo esto, mi botón funciona. Haceme la gamba y aprobame porfa que me costo una banda. Gracias!"  target="_blank">
+                        <img src="images/btn_whatsapp.png" alt="WhatsApp Logo">
+                    </a>
+                </div>
+            </section>
+
+        </main> <!--fin cuerpo-->
+            
+        
+        <footer> <!--pie de pagina-->
+          
+               <div>
+                    <i class="click fa-solid fa-credit-card"></i>
+                    <h4>Pagá con tarjeta o en efectivo</h4>
+                    <p>
+                        Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en 
+                        puntos de pago. ¡Y siempre es seguro!
+                    </p>
+                </div>
+
+                <div>
+                    <i class="click fa-solid fa-gift"></i>
+                    <h4>Envío gratis desde $ 2.500</h4>
+                    <p>
+                        Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de 
+                        productos. Es un beneficio de Mercado Puntos.
+                    </p>
+                </div>
+
+                <div>
+                    <i class="click fa-solid fa-user-shield"></i>
+                    <h4>Seguridad, de principio a fin</h4>
+                    <p>
+                        ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, 
+                        porque estás siempre protegid@.
+                    </p>
+                </div>
+                
+        </footer> <!--fin pie de pagina-->
+        <p> Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+    </body>
+</html>

@@ -133,6 +133,7 @@ header {
 main {
     width: 90%;
     margin: auto;
+    z-index:1;
 }
 
 /*configuracion del section*/
@@ -225,24 +226,37 @@ article:hover .deal-effect {
     border-radius:50%;
     line-height:80px;
     text-align:center;
-    z-index:999;
+    z-index:2;
 }
 
 /*>>>>>>CONFIGURACION DEL FOOTER<<<<<<*/
 /*alineacion del footer*/
-.footer{
+footer{
     display: flex;
+    justify-content: space-around;
     text-align: center;
-    padding: 10px;
-    margin: 5px;
     flex-wrap: wrap;
-    flex-direction: column;
 }
 
-/*atributos*/
-.color-light-blue{
-    color: #1259c3;
+footer div p{
+    color: #636363;
 }
+/*>>>>>>animaciones footer<<<<<<*/
+.click{
+    transition: all 0.5s;
+    color: #1259c3;
+    width: 2em;
+    height: 2em;
+    margin: 10px;
+    padding: 12px;
+}
+
+.click:hover{
+    color: #EAC926;
+    background-color: #1259c3;
+    border-radius: 100%;
+}
+
 
 /*>>>>>>MEDIA QUIERES<<<<<*/
 /*tablet*/
@@ -285,5 +299,11 @@ article:hover .deal-effect {
     }
     .flex-grow-4 {
         display: block;
+    }
+    .flex-column{
+        flex-direction: row;
+    }
+    footer {
+        flex-wrap: nowrap;
     }
 }
