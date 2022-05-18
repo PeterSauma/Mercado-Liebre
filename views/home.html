@@ -19,12 +19,19 @@ donde se declara la versión de html que se está usando-->
         <!-- poner nuestro h1 -->
 
         <header> <!--encabezado-->
-
+        
           <div class="container-logo-search-bar">
             <div class="flex-grow-50"><img src="images/logo-mercado-liebre.svg" alt="ml logo"></div>
-            <div class="flex-grow-50">Lugar para poner la barra de búsqueda</div>
+            <div class="container-search-bar">
+                <form class="nav-search" action="https://www.mercadolibre.com.ar/jm/search" method="GET" role="search" style="overflow: inherit; display: inherit;">
+                <input type="search" placeholder="Busca lo que quieras aquí">
+                <button type="submit" class="nav-search-btn" tabinex="3">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                </form>
+            </div>
           </div>
-          <h4><i class='fa-solid fa-hand-holding-dollar'></i> Comprá en cuotas y sin tarjeta de crédito</h4>
+          <h4 class="hand-holding"><i class='fa-solid fa-hand-holding-dollar'></i> Comprá en cuotas y sin tarjeta de crédito</h4>
           <nav>
               <ul>
                   <li><a href='home.html'>Ofertas</a></li>
@@ -43,146 +50,157 @@ donde se declara la versión de html que se está usando-->
           </div>
         
         </header> <!--fin encabezado-->
-   
+       
 
         <main> <!--cuerpo-->
 
-            <section class="section-1">
             <h2>Basado en tu última visita:</h2>
-
+            <section class="section-1">
                 <article class="flex-grow-1">
                     <div class="img"><img src="images/img-cafetera-moulinex.jpg" alt="imgCafetera"></div>
                     <div class="container-truck">
-                        <i class="color-green fa-solid fa-truck"></i>
+                        <i class="rotate color-green fa-solid fa-truck"></i>
                     </div>
                     <div class="img container-flex-box">
                        <h6 class="flex-grow-30">$6.770</h6>
-                       <h5 class="flex-grow-70 color-green">40% OFF</h5>
+                       <h5 class="deal-effect flex-grow-70 color-green">40% OFF</h5>
                     </div>
-                        <div class="img description"><h5>Cafetera Moulinex</h5></div>                       
+                    <div class="img"><h5 class="description">Cafetera Moulinex</h5></div>                       
                 </article>  
-
+                
                 <article class="flex-grow-2">
                     <div class="img"><img src="images/img-macbook-pro-2019.jpg" alt="imgMacPro"></div>
                     <div class="container-truck">
-                        <i class="color-green fa-solid fa-truck"></i>
+                        <i class="rotate color-green fa-solid fa-truck"></i>
                     </div>
                     <div class="img container-flex-box">
                         <h6 class="flex-grow-30">$230.000</h6>
-                        <h5 class="flex-grow-70 color-green">20% off</h5>
+                        <h5 class="deal-effect flex-grow-70 color-green">20% off</h5>
                     </div>
-                    <div class="img description"><h5>MacBook Pro 2019</h5></div>                       
+                    <div class="img"><h5 class="description">MacBook Pro 2019</h5></div>                       
                 </article>
               
                 <article class="flex-grow-3">
                     <div class="img"><img src="images/img-samsung-galaxy-s10.jpg" alt="imgSamsungGalaxy"></div>
                     <div class="container-truck">
-                        <i class="color-green fa-solid fa-truck"></i>
+                        <i class="rotate color-green fa-solid fa-truck"></i>
                     </div>
                     <div class="img container-flex-box">
                         <h6 class="flex-grow-30">$70.500</h6>
-                        <h5 class="flex-grow-70 color-green">10% off</h5>
+                        <h5 class="deal-effect flex-grow-70 color-green">10% off</h5>
                     </div>
-                    <div class="img description"><h5>Samsung Galaxy S10</h5></div>                       
+                    <div class="img"><h5 class="description">Samsung Galaxy S10</h5></div>                       
                 </article>
                 
                 <article class="flex-grow-4">
                     <div class="img"><img src="images/img-tv-samsung-smart.jpg" alt="imgSmartTV"></div>
                     <div class="container-truck">
-                        <i class="color-green fa-solid fa-truck"></i>
+                        <i class="rotate color-green fa-solid fa-truck"></i>
                     </div>
                     <div class="img container-flex-box">
                         <h6 class="flex-grow-30">$23.200</h6>
-                        <h5 class="flex-grow-70 color-green">5% off</h5>
+                        <h5 class="deal-effect flex-grow-70 color-green">5% off</h5>
                     </div>        
-                        <div class="img description"><h5>SmartTv Samsung 43"</h5></div>                       
+                    <div class="img"><h5 class="description">SmartTv Samsung 43"</h5></div>                       
                 </article>
             </section>
-              
+             
+            <h2>Ofertas:</h2>
             <section class="section-2">
-
-                <h2>Ofertas:</h2>
-
                 <article class="flex-grow-1">
                     <div class="img"><img src="images/img-cafetera-moulinex.jpg" alt="imgCafetera"></div>
                     <div class="container-truck">
-                        <i class="color-green fa-solid fa-truck"></i>
+                        <i class="rotate color-green fa-solid fa-truck"></i>
                     </div>
                     <div class="img container-flex-box">
                         <h6 class="flex-grow-30">$6.770</h6>
-                        <h5 class="flex-grow-70 color-green">40% OFF</h5>
+                        <h5 class="deal-effect flex-grow-70 color-green">40% OFF</h5>
                     </div>
-                    <div class="img description"><h5>Cafetera Moulinex</h5></div>                       
+                    <div class="img"><h5 class="description">Cafetera Moulinex</h5></div>                       
                 </article>
          
                 <article class="flex-grow-2">
                     <div class="img"><img src="images/img-macbook-pro-2019.jpg" alt="imgMacPro"></div>
                     <div class="container-truck">
-                        <i class="color-green fa-solid fa-truck"></i>
+                        <i class="rotate color-green fa-solid fa-truck"></i>
                     </div>
                     <div class="img container-flex-box">
                         <h6 class="flex-grow-30">$230.000</h6>
-                        <h5 class="flex-grow-70 color-green">20% off</h5>
+                        <h5 class="deal-effect flex-grow-70 color-green">20% off</h5>
                     </div>
-                    <div class="img description"><h5>MacBook Pro 2019</h5></div>                       
+                    <div class="img"><h5 class="description">MacBook Pro 2019</h5></div>                       
                 </article>
 
                 <article class="flex-grow-3">
                     <div class="img"><img src="images/img-samsung-galaxy-s10.jpg" alt="imgSamsungGalaxy"></div>
                     <div class="container-truck">
-                        <i class="color-green fa-solid fa-truck"></i>
+                        <i class="rotate color-green fa-solid fa-truck"></i>
                     </div>
                     <div class="img container-flex-box">
                         <h6 class="flex-grow-30">$70.500</h6>
-                        <h5 class="flex-grow-70 color-green">10% off</h5>
+                        <h5 class="deal-effect flex-grow-70 color-green">10% off</h5>
                     </div>
-                    <div class="img description"><h5>Samsung Galaxy S10</h5></div>                       
+                    <div class="img"><h5 class="description">Samsung Galaxy S10</h5></div>                       
                 </article>
 
                 <article class="flex-grow-4">
                     <div class="img"><img src="images/img-tv-samsung-smart.jpg" alt="imgSmartTV"></div>
                     <div class="container-truck">
-                        <i class="color-green fa-solid fa-truck"></i>
+                        <i class="rotate color-green fa-solid fa-truck"></i>
                     </div>
                     <div class="img container-flex-box">
                         <h6 class="flex-grow-30">$23.200</h6>
-                        <h5 class="flex-grow-70 color-green">5% off</h5>
+                        <h5 class="deal-effect flex-grow-70 color-green">5% off</h5>
                     </div>
-                    <div class="img description"><h5>SmartTv Samsung 43"</h5></div>                       
+                    <div class="img"><h5 class="description">SmartTv Samsung 43"</h5></div>                       
                 </article>
 
+            </section>
+
+            <section><!--botón de WhatsApp-->
+                <div class="whatsapp-btn">
+                    <a href="https://api.whatsapp.com/send/?phone=CalleFalsa123&text=Si estás leyendo esto, mi botón funciona. Haceme la gamba y aprobame porfa que me costo una banda. Gracias!"  target="_blank">
+                        <img src="images/btn_whatsapp.png" alt="WhatsApp Logo">
+                    </a>
+                </div>
             </section>
 
         </main> <!--fin cuerpo-->
             
         
         <footer> <!--pie de pagina-->
-            <ul class="footer">
-                <li>
+            
+               <div class="footer">
+                    <i class="color-light-blue fa-solid fa-credit-card"></i>
                     <h4>Pagá con tarjeta o en efectivo</h4>
                     <p>
                         Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en 
                         puntos de pago. ¡Y siempre es seguro!
                     </p>
-                </li>
-                <li>
+                </div>
+
+                <div class="footer">
+                    <i class="color-light-blue fa-solid fa-gift"></i>
                     <h4>Envío gratis desde $ 2.500</h4>
                     <p>
                         Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de 
                         productos. Es un beneficio de Mercado Puntos.
                     </p>
-                </li>
-                <li>
+                </div>
+
+                <div class="footer">
+                    <i class="color-light-blue fa-solid fa-user-shield"></i>
                     <h4>Seguridad, de principio a fin</h4>
                     <p>
                         ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, 
                         porque estás siempre protegid@.
                     </p>
-                </li>
-                <li>
-                    <h5> Copyright © 1999-2020 MercadoLiebre S.R.L.</h5>                    
-                </li>
-            </ul>
+                </div>
+                
+                <div>                
+                    <p> Copyright © 1999-2020 MercadoLiebre S.R.L.</p>                    
+                </div>
+            
         </footer><!--fin pie de pagina-->
 
     </body>
