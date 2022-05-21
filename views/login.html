@@ -3,60 +3,54 @@ no es una etiqueta, esto es una instrucción para el navegador,
 donde se declara la versión de html que se está usando-->
 <!DOCTYPE html> 
 <html lang="en">
-    <head>
-        <!-- UTF-8 incluye caracteres raros q no existen en ingles-->
-        <meta charset="UTF-8">
-        <!-- "viewport" con "scale=1.0" asegurará una escala de 1:1-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <title>Ingresá</title><!-- titulo que se muestra en la ventana del navegador -->
-        <link rel="stylesheet" href="css/style.css"><!-- enlace al archivo css de nuestro proyecto -->
-        <link rel="stylesheet" href="css/forms.css"><!-- enlace al archivo css de nuestro proyecto -->
-        <!-- enlace al archivo css externo -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet" /> 
+    <head><!--Esta etiqueta se usa para configurar el navegador, no es visible para el usuario-->        
+        <meta charset="UTF-8"><!-- UTF-8 incluye caracteres raros q no existen en ingles-->
+        <meta name="viewport" content="width=device-width"><!-- "viewport" con "scale=1.0" asegurará una escala de 1:1-->
+        <script src="https://kit.fontawesome.com/e27ee0d4d1.js" crossorigin="anonymous"></script> <!-- enlace iconos -->
+        <link rel="stylesheet" href="css/normalize.css"><!-- enlace al css para que se vea igual en todos los navegadores --> 
+        <link rel="stylesheet" href="css/style.css"><!-- enlace al archivo css de nuestro proyecto --> 
+        <title>Mercado Liebre</title> <!-- titulo que se muestra en la ventana del navegador -->
     </head>
-       
-    <body> 
+    
+    <body>
         <!-- poner nuestro h1 -->
 
-        <header> <!--encabezado--> 
-        
-          <div class="container-logo-search-bar">
-            <div class="flex-grow-50"><img src="images/logo-mercado-liebre.svg" alt="ml logo"></div>
-            <div class="container-search-bar">
-                <form class="nav-search" action="https://www.mercadolibre.com.ar/jm/search" method="GET" role="search" style="overflow: inherit; display: inherit;">
-                <input type="search" placeholder="Busca lo que quieras aquí">
-                <button type="submit" class="nav-search-btn" tabinex="3">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-                </form>
+        <header> <!--encabezado-->
+            
+            <div class="header-1">
+                <img class="img-logo" src="img/logo-mercado-liebre.svg" alt="logo mercado liebre">
+                <div class="input-box">
+                    <input class='box' type="text" placeholder="Buscar lo que necesites"> 
+                    <i class="search-icon fa-solid fa-magnifying-glass"></i>
+                </div>
+                <h2 class="copy-header"><i class="fa-solid fa-hand-holding-dollar"></i>   Comprá en cuotas y sin tarjeta de crédito</h2>
             </div>
-          </div>
-          <h4 class="hand-holding"><i class='fa-solid fa-hand-holding-dollar'></i> Comprá en cuotas y sin tarjeta de crédito</h4>
-          <nav> 
-              <ul>
-                  <li><a href='home'>Ofertas</a></li>
-                  <li><a href='officialStores.html'>Tiendas Oficiales</a></li>
-                  <li><a href='sell.html'>Vender</a></li>
-                  <li><a href='help.html'>Ayuda</a></li>
-              </ul>
-              <ul>
-                  <li><a href='register'>Creá tu cuenta </a><i class="fa-regular fa-id-card"></i></li>
-                  <li><a href='login'>Ingresá </a><i class="fa-solid fa-right-to-bracket"></i></li>
-                  <li><a href='sell.html'>Mis compras </a><i class="fa-solid fa-basket-shopping"></i></li>
-              </ul>
-          </nav>
-          <div class="burger-menu">
-              <i class="background-blue color-white border-radius-15 padding-10 fa-solid fa-bars"></i>
-          </div>
-        
+            <nav class="nav-heder">
+                <ul class="nav-list-1">                   
+                    <li><a href="/home">Ofertas</a></li>
+                    <li><a href="/home">Tiendas Oficiales</a></li>
+                    <li><a href="#">Vender</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+                <ul class="nav-list-2">                 
+                    <li><a href="/register">Creá tu cuenta <i class="fa-solid fa-id-card"></i></a></li>
+                    <li><a href="/login">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a> </li>
+                    <li><a href="#">Mis compras <i class="fa-solid fa-basket-shopping"></i></a></li>
+                </ul>
+            </nav>
+            <div class="burger-menu">                
+                <i class="icono-burger fas fa-bars"></i>
+            </div> 
+             
         </header> <!--fin encabezado-->
        
 
        <main> <!-- cuerpo-->
 
-        <form action="homelogin" method="POST" id="login" name="login">
-            <label for="user_id">
-                Ingresa tu e-mail        
+        <form action="homelogin" method="POST" id="login" name="login" class="create-form">
+           
+            <div class="control-form">
+                <label for="user_id"><h6>Ingresa tu e-mail</h6></label> 
                 <input 
                     type="email" 
                     name="user_id" 
@@ -68,81 +62,92 @@ donde se declara la versión de html que se está usando-->
                     suggestions="[object Object],[object Object],[object Object],[object Object]" 
                     autofocus="" 
                     rows="1" 
-                    class="andes-form-control__field" 
+                    class="control" 
                     maxlength="120" 
                     id="user_id" 
                     aria-invalid="false" 
                     aria-describedby="user_id-message false"
-                    placeholder="e-mail" 
-                >
-            </label>
+                    placeholder="e-mail"
+                    required>
+            </div>
 
-            <label for="password">
-                Contraseña
+            <div class="control-form">
+                <label for="password"><h6>Contraseña</h6></label>
                 <input 
                     type="password" 
-                    class="" 
+                    class="control"
                     id="pass" 
                     name="pass" 
-                    placeholder="Contraseña" 
-                    data-testid="royal_pass"
+                    placeholder="Escribi tu contraseña" 
+                    data-testid="royal_pass">
+               
+            </div>
+
+            <div class="control-form">
+                <button 
+                    value="1" 
+                    class="btn-form" 
+                    id="loginbutton" 
+                    data-testid="royal_login_button" 
+                    type="submit"
                 >
-            </label>
-            
-            <button 
-                value="1" 
-                class="" 
-                id="loginbutton" 
-                data-testid="royal_login_button" 
-                type="submit"
-            >
-            Iniciar sesión
-            </button>
+                <h6>Iniciar sesión</h6>
+                </button>
+            </div>
 
         </form>
 
 
-            <section> <!--botón de WhatsApp-->
-               <div class="whatsapp-btn">
-                    <a href="https://api.whatsapp.com/send/?phone=CalleFalsa123&text=Si estás leyendo esto, mi botón funciona. Haceme la gamba y aprobame porfa que me costo una banda. Gracias!"  target="_blank">
-                        <img src="images/btn_whatsapp.png" alt="WhatsApp Logo">
-                    </a>
-                </div>
-            </section>
+        <section><!--botón de WhatsApp-->
+            <div class="whatsapp-btn">
+                <a href="https://api.whatsapp.com/send/?phone=CalleFalsa123&text=Si estás leyendo esto, mi botón funciona. Haceme la gamba y aprobame porfa que me costo una banda. Gracias!"  target="_blank">
+                    <img src="img/btn_whatsapp.png" alt="WhatsApp Logo">
+                </a>
+            </div>
+        </section>
 
         </main> <!--fin cuerpo-->
             
-        
+              
         <footer> <!--pie de pagina-->
-          
-               <div>
-                    <i class="click fa-solid fa-credit-card"></i>
-                    <h4>Pagá con tarjeta o en efectivo</h4>
-                    <p>
-                        Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en 
-                        puntos de pago. ¡Y siempre es seguro!
-                    </p>
-                </div>
+            <nav class="nav-footer">
+                <ul>
+                    <div class="icon-div">
+                        <i class="icon-footer first-icon-footer click fa-solid fa-credit-card fa-2xl"></i>
+                        <li class="copy-footer">
+                            <h4>Pagá con tarjeta o en efectivo</h4>
+                            <p>
+                                Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                                puntos de pago. ¡Y siempre es seguro!
+                            </p>
+                        </li>
+                    </div>
+                    <div class="icon-div">
+                        <i class="icon-footer fa-solid fa-gift fa-2xl"></i>
+                        <li class="copy-footer">
+                            <h4>Envío gratis desde $ 2.500</h4>
+                            <p>
+                                Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.
+                            </p>
+                        </li>
+                    </div>
+                    <div class="icon-div">
+                        <i class="icon-footer fa-solid fa-user-shield fa-2xl"></i>
+                        <li class="copy-footer">
+                            <h4>Seguridad, de principio a fin</h4>
+                            <p>
+                                ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                                porque estás siempre protegid@.
+                            </p>
+                        </li>
+                    </div>
+                    <li class="copyright">
+                        <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+                    </li>
+                </ul>
+            </nav>
 
-                <div>
-                    <i class="click fa-solid fa-gift"></i>
-                    <h4>Envío gratis desde $ 2.500</h4>
-                    <p>
-                        Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de 
-                        productos. Es un beneficio de Mercado Puntos.
-                    </p>
-                </div>
-
-                <div>
-                    <i class="click fa-solid fa-user-shield"></i>
-                    <h4>Seguridad, de principio a fin</h4>
-                    <p>
-                        ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, 
-                        porque estás siempre protegid@.
-                    </p>
-                </div>
-                
-        </footer> <!--fin pie de pagina-->
-        <p> Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+     </footer> <!--fin pie de pagina-->
+     
     </body>
 </html>
